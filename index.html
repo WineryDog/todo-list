@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/755143204d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="daeb969bb388ce911511.jpg">
+    <link rel="stylesheet" href="84bb4fc080631c2605f1.css" type="text/css">
+    <title>Todo-List</title>
+<script defer src="main.js"></script></head>
+<body>
+    <div class="header">
+        <div class="menu-btn">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+        <div class="logo-box">
+            <img src="b28f7f1b472166c9527f.png" class="logo">
+            <p class="title">Todo-List</p>
+        </div>
+    </div>
+    <aside class="side-nav">
+        <div class="tasks-nav">
+            <a href="#" id="all" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 3H4a2 2 0 0 0-2 2v2a2 2 0 0 0 1 1.72V19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.72A2 2 0 0 0 22 7V5a2 2 0 0 0-2-2zM4 5h16v2H4zm1 14V9h14v10z"></path><path d="M8 11h8v2H8z"></path></svg>
+                <p>All</p>
+            </a>
+            <a href="#" id="today" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="m9.981 14.811-.467 2.726 2.449-1.287 2.449 1.287-.468-2.726 1.982-1.932-2.738-.398L11.963 10l-1.225 2.481L8 12.879z"></path><path d="M19 4h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm.002 16H5V8h14l.002 12z"></path></svg>
+                <p>Today</p>
+            </a>
+            <a href="#" id="upcoming" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-3V2h-2v2h-4V2H8v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM5 20V7h14V6l.002 14H5z"></path><path d="M7 10v2h10V9H7z"></path></svg>
+                <p>Upcoming</p>
+            </a>
+            <a href="#" id="completed" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M21 4h-3V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v1H3a1 1 0 0 0-1 1v3c0 4.31 1.799 6.91 4.819 7.012A6.001 6.001 0 0 0 11 17.91V20H9v2h6v-2h-2v-2.09a6.01 6.01 0 0 0 4.181-2.898C20.201 14.91 22 12.31 22 8V5a1 1 0 0 0-1-1zM4 8V6h2v6.83C4.216 12.078 4 9.299 4 8zm8 8c-2.206 0-4-1.794-4-4V4h8v8c0 2.206-1.794 4-4 4zm6-3.17V6h2v2c0 1.299-.216 4.078-2 4.83z"></path></svg>
+                <p>Completed</p>
+            </a>
+        </div>
+        <div class="projects-nav">
+            <div class="projects-title">
+                <p>Projects</p>
+                <div id="add-project" class="add-icon project">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"></path></svg>
+                </div>
+            </div>
+            <div class="projects-links">
+            </div>
+        </div>
+    </aside>
+    <div class="main">
+        <div class="main-title">
+            <h1 class="main-title-text">All</h1>
+        </div>
+        <div class="tasks-container">
+            <div class="tasks-title">
+                <p class="tasks-title-text">Tasks</p>
+            </div>
+            <div class="tasks-list">
+            </div>
+        </div>
+    </div>
+    <footer class="foot"><p class="attribution">Coded by <a class="attribution-link" href="https://github.com/WineryDog"><i class="fa-brands fa-github" aria-hidden="true"></i> WineryDog</a></p></footer>
+    <div class="modal-container">
+        <dialog id="project-modal-card" class="modal">
+            <form id="project-form" method="dialog">
+                <fieldset class="modal-fieldset-project">
+                    <legend class="modal-legend"></legend>
+                    <label for="modal-title" class="modal-label-title">Name</label>
+                    <input type="text" class="modal-title" id="modal-title" name="modal-title" required maxlength="25" autocomplete="off">
+                </fieldset>
+                <button class="modal-submit">Submit</button>
+                <button class="modal-close-project" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+                </button>
+            </form>
+        </dialog>
+        <dialog id="task-modal-card" class="modal">
+            <form id="task-form" method="dialog">
+                <fieldset class="modal-fieldset-task">
+                    <legend class="modal-legend"></legend>
+                    <label for="modal-title" class="modal-label-title">Description</label>
+                    <input type="text" class="modal-title" id="modal-title" name="modal-title" required maxlength="45" autocomplete="off">
+                    <label for="modal-date" class="modal-label-date">Due Date</label>
+                    <input type="date" required class="modal-date" id="modal-date" name="modal-date">
+                    <label for="modal-priority" class="modal-label-priority">Priority</label>
+                    <select class="modal-priority" id="modal-priority" name="modal-priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </fieldset>
+                <button class="modal-submit">Submit</button>
+                <button class="modal-close-task" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+                </button>
+            </form>
+        </dialog>
+    </div>
+</body>
+</html>
